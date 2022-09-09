@@ -60,12 +60,7 @@ const Form = () => {
               />
               <Input name="origin" label="Origen" />
               <Input name="destination" label="Destino" />
-              <Select
-                name={"sort"}
-                label={"Filtrar por"}
-                options={options}
-                defaultValue={options[0]}
-              />
+
               <div className={styles.buttonContainer}>
                 <button
                   className={styles.submit}
