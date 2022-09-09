@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+
+  .logo {
+    margin: 2em 0;
+  }
+
+  .greeting {
+    display: grid;
+    gap: 1em;
+    .date {
+      color: var(--dark-gray);
+      font-family: monospace;
+      font-size: 15px;
+    }
+    .hello {
+      font-weight: 500;
+      line-height: 24px;
+      font-size: 17px;
+    }
+  }
+}

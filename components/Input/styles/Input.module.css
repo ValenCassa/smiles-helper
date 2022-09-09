@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+  width: 100%;
+
+  .inputContainer {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid var(--dark-gray);
+  }
+
+  .label {
+    position: absolute;
+    bottom: 0.5em;
+    font-size: 15px;
+    color: var(--dark-gray);
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .label#hasValue {
+    transform: translateY(-1.8em);
+    font-size: 0.8em;
+    color: var(--dark-yellow);
+  }
+
+  .icon.iconActive {
+    color: var(--dark-yellow);
+  }
+
+  .icon {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    bottom: 0.3em;
+    right: 0.1em !important;
+    color: var(--dark-gray);
+  }
+
+  .icon#origin {
+    rotate: 45deg;
+  }
+
+  .icon#destination {
+    rotate: 120deg;
+  }
+
+  .input {
+    all: unset;
+    padding: 5.3px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    font-size: 15px;
+    color: #383838;
+  }
+}
+
+.error {
+  margin-top: 0.5em;
+  color: rgb(157, 36, 36);
+  font-size: 12px;
+}
+
+.inputContainer#hasValue {
+  border-bottom: 1px solid var(--dark-yellow);
+}

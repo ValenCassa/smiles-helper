@@ -1,0 +1,98 @@
+.container {
+  margin-top: 3em;
+
+  .title {
+    all: unset;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+  .row {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    align-items: center;
+    padding: 0.2em 0.3em;
+
+    .first {
+      display: grid;
+      line-height: 0em;
+      font-size: 15px;
+
+      .company {
+        font-weight: 500;
+      }
+
+      .flight {
+        color: #9f9f9f;
+        margin-top: 0.4em;
+      }
+    }
+  }
+
+  .row:nth-child(odd) {
+    border: none !important;
+  }
+
+  .row:first-child {
+    border-top: 1px solid #dadada !important;
+  }
+
+  .badges {
+    margin-left: 3em;
+    display: flex;
+
+    .badge {
+      font-size: 14px;
+      padding: 0.2em 0.8em;
+      font-weight: 500;
+    }
+  }
+}
+
+.badges > * + * {
+  margin-left: 0.7em;
+}
+
+.isLoading {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  scale: 0.4;
+}
+
+@media only screen and (max-width: 870px) {
+  .row {
+    padding: 0.2em 0 !important;
+    text-align: center;
+    display: grid !important;
+    place-content: center;
+
+    .badges {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .badges {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
+  .badges > * + * {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .badges {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

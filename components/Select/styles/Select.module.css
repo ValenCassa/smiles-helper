@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+  width: 100%;
+
+  .label {
+    position: absolute;
+    pointer-events: none;
+    font-size: 0.8em;
+    color: var(--dark-yellow);
+    transform: translateY(-1.4em);
+    font-weight: 500;
+  }
+
+  .icon {
+    position: absolute;
+    right: 0;
+    color: var(--dark-yellow);
+    margin-top: 0.3em;
+  }
+}

@@ -1,0 +1,57 @@
+.CalendarMonth_caption {
+  strong {
+    font-size: 12px !important;
+  }
+}
+
+.SingleDatePicker {
+  display: unset !important;
+}
+
+.DateInput,
+.DateInput_input,
+.SingleDatePickerInput {
+  background: transparent !important;
+  border: none !important;
+  width: 100% !important;
+}
+
+.DateInput_input {
+  border-bottom: 1px solid #bfbfbf !important;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+}
+
+.DateInput_input[aria-label="selected"] {
+  border-bottom: 1px solid var(--dark-yellow) !important;
+}
+
+.DayPickerNavigation_button {
+  scale: 0.7 !important;
+  border: none !important;
+  cursor: pointer;
+
+  svg {
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover {
+    svg {
+      fill: #000 !important;
+    }
+  }
+}
+
+.CalendarDay {
+  border: none !important;
+  font-size: 12px;
+
+  &:focus {
+    background-color: none !important;
+  }
+}
+
+.CalendarDay__selected {
+  color: black !important;
+  background-color: #f6e7be !important;
+}

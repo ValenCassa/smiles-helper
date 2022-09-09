@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+
+  .label {
+    position: absolute;
+    margin-left: 0.5em;
+    margin-top: 0.3em;
+    transition: all 0.2s ease-in-out;
+    color: var(--dark-gray);
+    font-size: 15px;
+  }
+
+  .icon {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    color: #bfbfbf;
+    transition: all 0.2s ease-in-out;
+    svg {
+      margin-top: 0.3em;
+      margin-right: 0.1em;
+      float: right;
+    }
+  }
+}
+
+#focused {
+  color: var(--dark-yellow) !important;
+}
+
+.label#focused {
+  margin-top: -1em;
+  font-size: 0.8em;
+}
+
+.error {
+  margin-top: 0.5em;
+  color: rgb(157, 36, 36);
+  font-size: 12px;
+}
