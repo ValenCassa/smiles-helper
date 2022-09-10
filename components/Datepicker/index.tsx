@@ -1,9 +1,8 @@
 import { ErrorMessage, useField } from "formik";
-import { startTransition, useState } from "react";
+import { useState } from "react";
 import { SingleDatePicker } from "react-dates";
 import styles from "./styles/Datepicker.module.css";
 import CalendarIcon from "public/svg/CalendarIcon.svg";
-import { format } from "date-fns";
 
 interface Props {
   name: string;

@@ -18,6 +18,6 @@ export const searchFlights = async ({
     const flights = await axios.get<Flight[]>(`/api/flights?${url.toString()}`);
     return flights.data;
   } catch (e) {
-    console.log(e);
+    return [];
   }
 };
